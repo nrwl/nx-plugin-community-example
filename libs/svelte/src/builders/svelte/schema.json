@@ -4,6 +4,15 @@
   "title": "Svelte builder",
   "description": "",
   "type": "object",
-  "properties": {},
+  "properties": {
+    "mainFile": {
+      "type": "string",
+      "description": "File to be compiled"
+    },
+    "dist": {
+      "type": "string",
+      "description": "Output directory for compiled file"
+    }
+  },
   "required": []
 }

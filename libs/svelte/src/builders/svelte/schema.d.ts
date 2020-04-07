@@ -1,3 +1,6 @@
 import { JsonObject } from '@angular-devkit/core';
 
-export interface SvelteBuilderSchema extends JsonObject {}
+export interface SvelteBuilderSchema extends JsonObject {
+  mainFile: string;
+  dist: string;
+}

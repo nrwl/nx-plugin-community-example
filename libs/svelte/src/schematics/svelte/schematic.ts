@@ -76,7 +76,11 @@ export default function(options: SvelteSchematicSchema): Rule {
         })
         .targets.add({
           name: 'build',
-          builder: '@community/svelte:build'
+          builder: '@community/svelte:build',
+          options: {
+            mainFile: `${normalizedOptions.projectRoot}/src/index.svelte`,
+            dist: `./dist/libs/${normalizedOptions.projectName}`
+          }
         });
     }),
     addProjectToNxJsonInTree(normalizedOptions.projectName, {

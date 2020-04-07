@@ -3,10 +3,10 @@
   "name": "svelte",
   "version": "0.0.1",
   "schematics": {
-    "svelte": {
+    "component": {
       "factory": "./src/schematics/svelte/schematic",
       "schema": "./src/schematics/svelte/schema.json",
-      "description": "svelte schematic"
+      "description": "generate svelte component"
     }
   }
 }
